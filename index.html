@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WTFSIB</title>
+</head>
+<body>
+<h1>What the F*ck Should I Build?</h1>
+<button id="generate">Generate Idea</button>
+<p id="idea"></p>
+<script>
+const adjectives = ["revolutionary", "crazy", "ridiculous", "genius", "absurd"];
+const technologies = ["blockchain", "quantum computing", "VR", "AR", "IoT"];
+const projectTypes = ["dating app", "marketplace", "social network", "game", "educational tool"];
+
+document.getElementById('generate').addEventListener('click', () => {
+    const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+    const technology = technologies[Math.floor(Math.random() * technologies.length)];
+    const projectType = projectTypes[Math.floor(Math.random() * projectTypes.length)];
+    document.getElementById('idea').textContent = `Build a ${adjective} ${technology} ${projectType}!`;
+});
+</script>
+</body>
+</html>
