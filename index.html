@@ -8,16 +8,16 @@
 <button id="generate">Generate Idea</button>
 <p id="idea"></p>
 <script>
-const adjectives = ["revolutionary", "crazy", "ridiculous", "genius", "absurd"];
-const technologies = ["blockchain", "quantum computing", "VR", "AR", "IoT"];
-const projectTypes = ["dating app", "marketplace", "social network", "game", "educational tool"];
+    const adjectives = ["revolutionary", "crazy", "ridiculous", "genius", "absurd", "unthinkable", "mind-blowing", "unconventional", "quirky", "bizarre", "futuristic", "retro", "dystopian", "utopian", "virtual", "augmented", "immersive", "ephemeral", "persistent", "adaptive", "interactive", "automated", "manual", "analog", "digital", "mechanical", "biological", "nano", "gigantic"];
+    const technologies = ["blockchain", "quantum computing", "VR", "AR", "IoT", "AI", "machine learning", "neural networks", "genetic algorithms", "swarm intelligence", "augmented reality", "virtual reality", "3D printing", "biotechnology", "nanotechnology", "robotics", "drones", "solar energy", "wireless charging", "quantum teleportation", "cybersecurity", "cloud computing", "edge computing", "space tourism", "hyperloop", "autonomous vehicles", "smart homes", "wearables", "e-textiles"];
+    const projectTypes = ["dating app", "marketplace", "social network", "game", "educational tool", "personal assistant", "fitness tracker", "mental health app", "recipe organizer", "travel planner", "budget tracker", "diy project guide", "language learning platform", "music discovery service", "virtual concert experience", "augmented reality guide", "smart garden system", "home automation system", "peer-to-peer lending platform", "crowdsourced advice forum", "interactive story", "escape room game", "mystery solving app", "survival guide", "virtual museum tour", "time management tool", "productivity enhancer", "life simulator", "universe explorer", "alien communication interface"];
 
-document.getElementById('generate').addEventListener('click', () => {
-    const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-    const technology = technologies[Math.floor(Math.random() * technologies.length)];
-    const projectType = projectTypes[Math.floor(Math.random() * projectTypes.length)];
-    document.getElementById('idea').textContent = `Build a ${adjective} ${technology} ${projectType}!`;
-});
+    document.getElementById('generate').addEventListener('click', () => {
+        const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+        const technology = technologies[Math.floor(Math.random() * technologies.length)];
+        const projectType = projectTypes[Math.floor(Math.random() * projectTypes.length)];
+        document.getElementById('idea').textContent = `Build a ${adjective} ${technology} ${projectType}!`;
+    });
 </script>
 </body>
 </html>
